@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form Exercise</title>
+</head>
+<body>
+<form>
+	<fieldset>
+		<legend>
+			<b>Your Message to "Example" Cafe:</b>
+		</legend>
+		<table style="width: 40%;">
+			<tbody>
+				<tr>
+					<td>To:</td>
+					<td>
+						<input list="To">
+						<datalist id="To">
+							<option value="Owner"></option>
+							<option value="Manager"></option>
+							<option value="Receptionist"></option>
+							<option value="Waiter"></option>
+							<option value="Deliver"></option>
+						</datalist>
+					</td>
+				</tr>
+				<tr>
+					<td>Your email</td>
+					<td>
+						<input type="email" name="mail">
+					</td>
+				</tr>
+				<tr>
+					<td>Message</td>
+					<td style="height: 310px;">
+						<textarea style="width: 440px;height: 220px;margin- top; -35px">
+						</textarea>
+						<br>
+						<label id="FI">Attach File</label>
+						<br>
+						<input type="file" name="files" id="FI">
+						<input type="submit" value="Send" onclick="alert('Are you sure do you want to submit the form?')">
+					</td>
+				</tr>
+				<tr>
+					<td>Paymenft Methold</td>
+					<td>
+						<input type="checkbox" name="1" id="1c">
+						<label id="1c">Cash</label>
+						<br>
+						<input type="checkbox" name="2" id="2c">
+						<label>Cheque</label>
+						<br>
+						<input type="checkbox" name="1" id="3c">
+						<label id="3c">KPay/WavePay</label>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</fieldset>
+	<fieldset>
+		<legend>
+			<b>How you found us:</b>
+		</legend>
+		<table>
+			<tbody>
+				<tr>
+					<td>How did you hear of us</td>
+					<td>
+						<select>
+							<option value="google">Google</option>
+							<option value="google">Local newspaper ad</option>
+                            <option value="google">Friend</option>
+                            <option value="google">Other</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="checkbox" name="ENsure" checked="checked">
+						<label id="Ensure">Ensure this box is checked if you would like to receive email updates</label>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</fieldset>
+</form>
+</body>
+</html>
